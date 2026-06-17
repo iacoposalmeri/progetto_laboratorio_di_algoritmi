@@ -1,0 +1,7 @@
+INSERT 97801 Algoritmi_C++ Sedgewick 2020
+INSERT 97815 Database Hoffer 2016
+INSERT 97807 The Java Programming Language Arnold 1958
+SEARCH 97815
+DELETE 97807
+RANGE 97800 97820
+PRINT

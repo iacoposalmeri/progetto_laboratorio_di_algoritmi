@@ -1,0 +1,12 @@
+(SEARCH)
+Libro trovato:
+ISBN: 97815
+Titolo: Database
+Autore: Hoffer
+Anno: 2016
+(RANGE 97800 97820)
+97801 Algoritmi_C++
+97815 Database
+PRINT
+97801 Algoritmi_C++
+97815 Database
