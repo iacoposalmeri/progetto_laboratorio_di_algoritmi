@@ -2,11 +2,23 @@ import java.io.PrintWriter;
 import java.io.IOException;
 import java.util.Random;
 
+/**
+ * Utility per la generazione automatica di file di test massivi.
+ * Crea dataset casuali simulando le operazioni del catalogo (INSERT, SEARCH, DELETE, RANGE, PRINT)
+ * con una distribuzione probabilistica realistica. È utilizzata per testare la solidità 
+ * strutturale e la complessità asintotica O(log N) dell'Albero Rosso-Nero sotto stress.
+ */
 public class GeneratoreTest {
+    /**
+     * Metodo di avvio del generatore.
+     *
+     * @param args Array di argomenti da riga di comando:
+     * args[0] = Nome del file di output da generare (default: "test.txt")
+     * args[1] = Numero totale di operazioni da generare (default: 100)
+     */
     public static void main(String[] args) {
-        // Numero di righe da generare (es. 100.000)
-        int NUMERO_OPERAZIONI = 100000;
-        String nomeFile = "test_massivo.txt";
+        String nomeFile = args.length > 0 ? args[0] : "test.txt";
+        int NUMERO_OPERAZIONI = args.length > 1 ? Integer.parseInt(args[1]) : 100;
 
         String[] autori = {"Sedgewick", "Hoffer", "Arnold", "Tolkien", "Asimov", "Dijkstra", "Knuth", "Turing"};
         String[] paroleTitolo = {"Algoritmi", "Database", "Java", "Programming", "Language", "Strutture", "Dati", "Avanzati", "Base", "Manuale"};
@@ -16,11 +28,12 @@ public class GeneratoreTest {
         try (PrintWriter writer = new PrintWriter(nomeFile)) {
             for (int i = 0; i < NUMERO_OPERAZIONI; i++) {
                 
-                // Generiamo un numero da 0 a 99 per decidere il comando
+                // Genera un numero da 0 a 99 per decidere il comando
                 int tipoComando = random.nextInt(100);
                 
-                // Genera un ISBN casuale tra 9780000 e 9789999
-                String isbn = "978" + String.format("%04d", random.nextInt(10000));
+                // Genera un ISBN casuale
+                int numeroIsbn = random.nextInt(10000000);
+                String isbn = "978" + String.format("%07d", numeroIsbn);
 
                 if (tipoComando < 80) { // 80% probabilità: INSERT
                     String autore = autori[random.nextInt(autori.length)];
@@ -39,20 +52,28 @@ public class GeneratoreTest {
                     writer.println("DELETE " + isbn);
                 } 
                 else if (tipoComando < 99) { // 2% probabilità: RANGE
-                    String isbnEnd = "978" + String.format("%04d", random.nextInt(10000));
-                    // Ordina correttamente min e max per il range
-                    if (isbn.compareTo(isbnEnd) < 0) {
-                        writer.println("RANGE " + isbn + " " + isbnEnd);
+                    if (NUMERO_OPERAZIONI <= 10000) {
+                        String isbnEnd = "978" + String.format("%07d", random.nextInt(10000000));
+                        if (isbn.compareTo(isbnEnd) < 0) {
+                            writer.println("RANGE " + isbn + " " + isbnEnd);
+                        } else {
+                            writer.println("RANGE " + isbnEnd + " " + isbn);
+                        }
                     } else {
-                        writer.println("RANGE " + isbnEnd + " " + isbn);
+                        String isbnEnd = "978" + String.format("%07d", numeroIsbn + 50);
+                        writer.println("RANGE " + isbn + " " + isbnEnd);
                     }
                 }
                 else { // 1% probabilità: PRINT
-                    writer.println("PRINT");
+                    if (NUMERO_OPERAZIONI <= 10000) {
+                        writer.println("PRINT");
+                    } else {
+                        writer.println("SEARCH " + isbn);
+                    }
                 }
             }
             
-            System.out.println("File '" + nomeFile + "' generato con successo con " + NUMERO_OPERAZIONI + " operazioni!");
+            System.out.println("File '" + nomeFile + "' generato con successo con " + NUMERO_OPERAZIONI + " operazioni");
 
         } catch (IOException e) {
             System.err.println("Errore durante la creazione del file: " + e.getMessage());
