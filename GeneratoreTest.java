@@ -19,11 +19,12 @@ public class GeneratoreTest {
     public static void main(String[] args) {
         String nomeFile = args.length > 0 ? args[0] : "test.txt";
         int NUMERO_OPERAZIONI = args.length > 1 ? Integer.parseInt(args[1]) : 100;
+        boolean usaPrint = args.length > 2 ? Boolean.parseBoolean(args[2]) : false;
 
         String[] autori = {"Sedgewick", "Hoffer", "Arnold", "Tolkien", "Asimov", "Dijkstra", "Knuth", "Turing"};
         String[] paroleTitolo = {"Algoritmi", "Database", "Java", "Programming", "Language", "Strutture", "Dati", "Avanzati", "Base", "Manuale"};
         
-        Random random = new Random();
+        Random random = new Random(42);
 
         try (PrintWriter writer = new PrintWriter(nomeFile)) {
             for (int i = 0; i < NUMERO_OPERAZIONI; i++) {
@@ -65,10 +66,11 @@ public class GeneratoreTest {
                     }
                 }
                 else { // 1% probabilità: PRINT
-                    if (NUMERO_OPERAZIONI <= 10000) {
+                    if (usaPrint) {
                         writer.println("PRINT");
                     } else {
-                        writer.println("SEARCH " + isbn);
+                        String isbnEnd = "978" + String.format("%07d", numeroIsbn + 50);
+                        writer.println("RANGE " + isbn + " " + isbnEnd);
                     }
                 }
             }

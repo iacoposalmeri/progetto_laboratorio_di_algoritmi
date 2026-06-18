@@ -1,0 +1,100 @@
+INSERT 9787392763 Algoritmi Strutture Dijkstra 1917
+INSERT 9789796918 Java Java Dijkstra 2021
+INSERT 9789572292 Dati Algoritmi Arnold 1922
+INSERT 9784241400 Programming Programming Hoffer 1971
+INSERT 9780146030 Dati Algoritmi Knuth 1964
+INSERT 9780472430 Avanzati Java Arnold 1950
+DELETE 9781490713
+INSERT 9783362379 Avanzati Strutture Dijkstra 1915
+INSERT 9786002807 Programming Programming Knuth 1910
+INSERT 9786205558 Algoritmi Programming Sedgewick 1936
+INSERT 9782028261 Manuale Java Asimov 1921
+INSERT 9789809094 Manuale Strutture Asimov 1905
+PRINT
+INSERT 9783641453 Programming Dati Tolkien 1952
+INSERT 9785090625 Language Programming Turing 2023
+INSERT 9784337807 Language Base Sedgewick 1912
+INSERT 9782523747 Strutture Manuale Dijkstra 1956
+INSERT 9789048229 Base Algoritmi Tolkien 1917
+INSERT 9789077532 Database Manuale Knuth 1992
+INSERT 9787545275 Language Avanzati Arnold 1991
+INSERT 9780294031 Strutture Dati Arnold 1948
+INSERT 9787330246 Programming Java Hoffer 2000
+INSERT 9787582322 Java Java Arnold 1985
+INSERT 9786226238 Base Strutture Turing 1945
+INSERT 9781136627 Avanzati Database Sedgewick 1980
+INSERT 9788349904 Programming Avanzati Tolkien 1988
+INSERT 9789901630 Strutture Database Tolkien 1942
+PRINT
+INSERT 9784562342 Dati Algoritmi Dijkstra 1999
+INSERT 9786018065 Manuale Manuale Asimov 2018
+DELETE 9788766324
+INSERT 9781028741 Database Java Hoffer 1901
+DELETE 9783660929
+INSERT 9786774046 Manuale Language Knuth 2009
+SEARCH 9780204536
+INSERT 9786918492 Programming Dati Turing 1955
+INSERT 9789601766 Programming Programming Arnold 1977
+INSERT 9786016209 Base Manuale Tolkien 1902
+INSERT 9788610122 Algoritmi Algoritmi Dijkstra 1956
+DELETE 9789900488
+INSERT 9783482894 Database Programming Asimov 2006
+INSERT 9784821675 Programming Programming Tolkien 2026
+INSERT 9782303416 Avanzati Strutture Turing 1911
+INSERT 9780520118 Manuale Avanzati Asimov 1955
+INSERT 9786386553 Dati Database Dijkstra 1904
+INSERT 9784405088 Database Algoritmi Turing 1975
+INSERT 9788784193 Strutture Programming Dijkstra 1986
+DELETE 9784803459
+INSERT 9786874815 Manuale Algoritmi Turing 1974
+INSERT 9789241064 Avanzati Manuale Asimov 1958
+INSERT 9787641294 Database Algoritmi Dijkstra 2025
+INSERT 9783878186 Java Avanzati Sedgewick 1948
+PRINT
+INSERT 9787896410 Base Strutture Dijkstra 1914
+DELETE 9787297440
+INSERT 9788758619 Avanzati Programming Sedgewick 2000
+INSERT 9787993241 Manuale Language Dijkstra 1977
+INSERT 9786455960 Programming Dati Turing 1950
+INSERT 9780972565 Language Programming Asimov 1961
+DELETE 9787653955
+INSERT 9789491605 Strutture Language Dijkstra 1986
+INSERT 9788818688 Database Dati Hoffer 1955
+INSERT 9786841248 Avanzati Dati Tolkien 1971
+DELETE 9780893857
+INSERT 9787220771 Language Avanzati Turing 2004
+INSERT 9784340011 Programming Manuale Arnold 1982
+INSERT 9785218224 Dati Algoritmi Sedgewick 1976
+INSERT 9788152706 Java Programming Dijkstra 1908
+INSERT 9789331680 Language Strutture Hoffer 1975
+INSERT 9780016596 Database Base Tolkien 2021
+SEARCH 9780636852
+INSERT 9788031529 Base Java Asimov 1948
+DELETE 9781327952
+INSERT 9787314802 Strutture Strutture Asimov 1905
+INSERT 9784717950 Strutture Dati Asimov 1939
+INSERT 9782904546 Programming Avanzati Sedgewick 2026
+INSERT 9782678143 Base Database Tolkien 1984
+INSERT 9783884542 Avanzati Base Arnold 1994
+INSERT 9780027094 Programming Algoritmi Asimov 1959
+INSERT 9787497848 Language Strutture Asimov 1907
+INSERT 9789556488 Language Manuale Sedgewick 1924
+INSERT 9787693408 Manuale Database Arnold 1930
+INSERT 9789675100 Database Strutture Asimov 1967
+DELETE 9782939498
+INSERT 9781566201 Algoritmi Base Dijkstra 1994
+INSERT 9786036318 Language Database Arnold 1942
+INSERT 9789827125 Manuale Manuale Asimov 1913
+INSERT 9786609497 Manuale Dati Asimov 1942
+INSERT 9786751517 Dati Language Arnold 1960
+SEARCH 9784870065
+INSERT 9781569526 Strutture Base Asimov 1922
+INSERT 9789972367 Dati Database Dijkstra 1987
+DELETE 9786417047
+INSERT 9783801204 Language Language Hoffer 2026
+INSERT 9780536603 Database Programming Asimov 1983
+INSERT 9789128970 Language Language Dijkstra 2012
+INSERT 9788219233 Database Avanzati Arnold 2011
+SEARCH 9788441471
+SEARCH 9783109875
+INSERT 9788594834 Database Algoritmi Tolkien 1960

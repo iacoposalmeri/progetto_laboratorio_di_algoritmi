@@ -12,6 +12,12 @@ Aprire un terminale nella cartella principale del progetto e creare la cartella 
 
 Questo comando crea un file `Catalogo.jar`
 
+## Creare il file di input (.txt)
+
+    java -cp Catalogo.jar GeneratoreTest test.txt <numero_righe> <flag>
+
+    *<flag> indica un valore booleano "true" o "false" che permette di generare un .txt con o senza PRINT*
+
 ## Esecuzione manuale
 
     java -Xmx4G -jar Catalogo.jar input.txt output.txt
